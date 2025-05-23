@@ -1,0 +1,54 @@
+{
+    "xBarChart": {
+      "data": [
+        { "sample": 1, "values": 30 },
+        { "sample": 2, "values": 36 },
+        { "sample": 3, "values": 35 },
+        { "sample": 4, "values": 32 },
+        { "sample": 5, "values": 38 },
+        { "sample": 6, "values": 34 },
+        { "sample": 7, "values": 33 }
+      ],
+      "limits": {
+        "UCL": 40,
+        "LCL": 28,
+        "CL": 34
+      }
+    },
+    "rChart": {
+      "data": [
+        { "sample": 1, "values": 20 },
+        { "sample": 2, "values": 31 },
+        { "sample": 3, "values": 8 },
+        { "sample": 4, "values": 18 },
+        { "sample": 5, "values": 30 },
+        { "sample": 6, "values": 18 },
+        { "sample": 7, "values": 5 }
+      ],
+      "limits": {
+        "UCL": 35,
+        "LCL": 3,
+        "CL": 18.5
+      }
+    },
+    "paretoChart": {
+      "data": [
+        { "cause": "delivery", "frequency": 40, "cFrequency": 40, "cumulative": 40 },
+        { "cause": "product", "frequency": 25, "cFrequency": 65, "cumulative": 65 },
+        { "cause": "item", "frequency": 15, "cFrequency": 80, "cumulative": 80 },
+        { "cause": "support", "frequency": 10, "cFrequency": 90, "cumulative": 90 },
+        { "cause": "other", "frequency": 10, "cFrequency": 100, "cumulative": 100 }
+      ]
+    },
+    "histogram": {
+      "data": [
+        { "range": "65-69", "mid": 67, "frequency": 5, "curve": 1.2 },
+        { "range": "70-74", "mid": 72, "frequency": 9, "curve": 3.5 },
+        { "range": "75-79", "mid": 77, "frequency": 6, "curve": 3.2 },
+        { "range": "80-84", "mid": 82, "frequency": 6, "curve": 2.0 },
+        { "range": "85-89", "mid": 87, "frequency": 3, "curve": 0.8 },
+        { "range": "90-94", "mid": 92, "frequency": 1, "curve": 0.2 }
+      ]
+    }
+  }
+      

@@ -1,24 +1,26 @@
 import React from 'react';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Layout from './components/Layout';
+import Dashboard from './pages/Dashboard';
 import XBarChart from './components/XBarChart';
 import RChart from './components/RChart';
-import { Button, Typography, Container } from '@mui/material';
+import ParetoChart from './components/ParetoChart';
+import Histogram from './components/Histogram';
 
 function App() {
-    return (
-        <Container maxWidth="sm" style={{ marginTop: '2rem' }}>
-            <Typography variant="h3" gutterBottom>
-                Welcome to MUI + CRA!
-            </Typography>
-            <Button variant="contained" color="primary">
-                Click Me
-            </Button>
-            <div className="App" style={{ padding: '2rem' }}>
-                <XBarChart />
-                <RChart />
-            </div>
-        </Container>
-    );
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Dashboard />} />
+          <Route path="/xBarChart" element={<XBarChart />} />
+          <Route path="/RChart" element={<RChart />} />
+          <Route path="/ParetoChart" element={<ParetoChart />} />
+          <Route path="/Histogram" element={<Histogram />} />
+        </Route>
+      </Routes>
+    </Router>
+  );
 }
 
-export default App; 
+export default App;
